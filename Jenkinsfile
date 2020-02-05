@@ -39,13 +39,13 @@ pipeline {
                 sh 'mvn package -DskipTests'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo '## TODO DEPLOYMENT ##'
-		sh 'mvn deploy'
-            }
-        }
-    }
+        //stage('Deploy') {
+          //  steps {
+            //    echo '## TODO DEPLOYMENT ##'
+		//sh 'mvn deploy'
+           // }
+        //}
+    //}
     
     post {
         always {
